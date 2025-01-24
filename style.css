@@ -12,7 +12,14 @@
     --white-color: #fff;
     --accent: #ad1818;
 }
-
+.section__title {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
 .header {
     max-width: 1400px;
     width: 100%;
@@ -30,7 +37,7 @@
 }
 
 .header__nav {
-    width: 40%;
+    width: 41%;
 }
 
 .header__list {
@@ -104,21 +111,13 @@
 .about {
     max-width: 1400px;
     width: 100%;
-  
     margin: 150px auto;
     padding: 0 124px;
 }
 .about__title {
 
 }
-.section__title {
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--black-color);
-    margin-bottom: 30px;
-}
+
 .about__text {
     width: 93%;
     font-weight: 400;
@@ -143,4 +142,94 @@
     border: 1px solid var(--accent);
     background: none;
     color: var(--accent);
+}
+
+.projects {
+    max-width: 1400px;
+    width: 100%;
+    margin: 150px auto;
+    padding: 0 124px;
+}
+.projects__title {
+}
+.projects__container {
+    margin-bottom: 91px;
+}
+.projects__img {
+    margin-bottom: 10px;
+}
+.projects__sub-title {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+    margin-bottom: 12px;
+}
+.projects__link {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    text-decoration: none;
+}
+.projects__btn {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    background: none;
+    padding: 56px 0;
+    color: var(--accent);
+    transition: 0.3s;
+    outline: none;
+}
+
+.projects__btn:hover{
+    background-color: var(--accent);
+    color: var(--white-color);
+}
+
+.services {
+    max-width: 1400px;
+    width: 100%;
+    margin: 150px auto 0 auto;
+    padding: 151px 124px 90px 124px;
+    background: var(--black-color);
+}
+.services__title {
+    color: var(--white-color);
+}
+
+.services__container {
+    margin-bottom: 60px;
+}
+.services__img {
+    margin-bottom: 10px;
+}
+.services__sub-title {
+    font-weight: 400;
+font-size: 30px;
+letter-spacing: -0.03em;
+    color: var(--white-color);
+}
+
+.project-sub {
+    max-width: 1400px;
+    width: 100%;
+    height: 101vh;
+    margin: 0 auto;
+    padding: 60px 124px;
+    background: url(./img/footer1.png)center/cover no-repeat;
+    display: flex;
+    align-items: end;
+}
+.project-sub__title {
+    width: 38%;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
 }
