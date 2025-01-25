@@ -33,8 +33,9 @@
 }
 
 .header__logo img {
-    width: 128px;
-    height: 23px;
+    width: 100%;
+    /* width: 128px;
+    height: 23px; */
 }
 
 .header__nav {
@@ -161,6 +162,7 @@
     margin-bottom: 91px;
 }
 .projects__img {
+    width: 100%;
     margin-bottom: 10px;
 }
 .projects__sub-title {
@@ -213,6 +215,7 @@
     margin-bottom: 60px;
 }
 .services__img {
+    width: 100%;
     margin-bottom: 10px;
 }
 .services__sub-title {
