@@ -150,7 +150,7 @@
     color: var(--accent);
     cursor: pointer;
 }
-
+/* end about */
 .projects {
     max-width: 1400px;
     width: 100%;
@@ -166,7 +166,7 @@
     width: 100%;
     margin-bottom: 10px;
 }
-.projects__sub-title {
+.projects__sub-title{
     font-weight: 400;
     font-size: 30px;
     letter-spacing: -0.03em;
@@ -200,12 +200,12 @@
     color: var(--white-color);
     cursor: pointer;
 }
-
+/* end projects */
 .services {
     max-width: 1400px;
     width: 100%;
     margin: 150px auto 0 auto;
-    padding: 151px 125px 90px 125px;
+    padding: 151px 125px 150px 125px;
     background: var(--black-color);
 }
 .services__title {
@@ -216,15 +216,40 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .services__card{
-    width: 49%;
-    margin-bottom: 60px;
+    width: 49.5%;
+    margin-bottom: 80px;
 }
 .services__img {
     width: 100%;
-    margin-bottom: 10px;
+    height: 388px;
+    margin-bottom: 24px;
+    padding: 30px;
+}
+.services__img-text{
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+    border-radius: 5px;
+    background: var(--accent);
+    padding: 5px 20px;
+}
+.services__img1{
+    background: url(./img/servicec2.1.png)center/cover no-repeat;
+}
+.services__img2{
+    background: url(./img/servicec2.2.png)center/cover no-repeat;
+}
+.services__img3{
+    background: url(./img/servicec2.3.png)center/cover no-repeat;
+}
+.services__img4{
+    background: url(./img/servicec2.4.png)center/cover no-repeat;
 }
 .services__sub-title {
     font-weight: 400;
@@ -232,25 +257,138 @@
     letter-spacing: -0.03em;
     color: var(--white-color);
 }
-
+.services__btn{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 56px 0;
+    color: var(--accent);
+    transition: 0.3s;
+    outline: none;
+    background-color: var(--accent);
+    color: var(--white-color);
+}
+.services__btn:hover{
+    cursor: pointer;
+    background: none;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+/* end */
+.reviews {
+    max-width: 1400px;
+    width: 100%;
+    margin: 150px auto 70px auto;
+    padding: 0 125px;
+}
+.reviews__title {
+}
+.reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.reviews__card {
+    width: 46%;
+    margin-bottom: 80px;
+    margin-right: 4%;
+}
+.reviews__card:last-child{
+    flex-grow: 0.5;
+}
+.reviews__sub-title {
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+    margin-bottom: 14px;
+}
+.reviews__text {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+}
+.reviews__text:nth-of-type(1){
+    margin-bottom: 20px;
+}
 .project-sub {
     max-width: 1400px;
     width: 100%;
     height: 101vh;
     margin: 0 auto;
     padding: 60px 125px;
-    background: url(./img/project-sub1.png)center/cover no-repeat;
-    display: flex;
-    align-items: end;
-}
-.project-sub__title {
-    width: 38%;
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: -0.03em;
-    color: var(--white-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
+.projects__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.project-sub__title {
+    color: var(--white-color);
+}
+.projects_btns {
+}
+.pro__btn-left {
+}
+.pro__btn-right {
+}
+.project-sub__text {
+}
+.project-sub__container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slid{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.project-sub__img{
+    width: 100%;
+}
+.project-sub__img1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    background: url(./img/project-sub1.png)center/cover no-repeat;
+}
+.project-sub__img2 {
+    width: 100%;
+    height: 100%;
+    background: url(./img/project-sub2.png)center/cover no-repeat;
+}
+.project-sub__img3 {
+    width: 100%;
+    height: 100%;
+    background: url(./img/project-sub3.png)center/cover no-repeat;
+}
+.project-sub__img4 {
+    width: 100%;
+    height: 100%;
+    background: url(./img/project-sub4.png)center/cover no-repeat;
+}
+/* end projects */
 .contacts {
     max-width: 1400px;
     width: 100%;
