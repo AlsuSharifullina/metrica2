@@ -29,6 +29,7 @@
     height: 90px;
     margin: 0 auto;
     padding: 0 125px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +87,7 @@
     opacity: 0.5;
 } */
 
-
+/* end header */
 .modern {
     max-width: 1400px;
     width: 100%;
@@ -120,7 +121,7 @@
     letter-spacing: -0.03em;
     color: var(--white-color);
 }
-
+/*  end modern */
 .about {
     max-width: 1400px;
     width: 100%;
@@ -304,7 +305,7 @@
     border: 1px solid var(--accent);
 }
 
-/* end */
+/* end services*/
 .reviews {
     max-width: 1400px;
     width: 100%;
@@ -348,11 +349,11 @@
 .reviews__text:nth-of-type(1) {
     margin-bottom: 20px;
 }
-
+/* end reviews */
 .gallery{
     max-width: 1400px;
     width: 100%;
-    height: 101vh;
+    height: 84.5vh;
     margin: 0 auto;
     padding: 60px 125px;
     position: relative;
@@ -371,20 +372,42 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 67px 125px 165px 125px;
 }
 
 .gallery__title {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
     color: var(--white-color);
 }
 
-.gallery_btns {}
+.gallery_btns {
+    display: flex;
+}
+.gallery__btn{
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+}
+.gallery__btn-left {
+    margin-right: 14px;
+}
 
-.gallery__btn-left {}
+.gallery__btn-right {
 
-.gallery__btn-right {}
+}
 
-.gallery__text {}
+.gallery__text {
+    width: 30%;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+    margin: 60px 125px 60px ;
+}
 
 .gallery__container {
     width: 100%;
@@ -410,7 +433,7 @@
     height: 100%;
     display: flex;
     align-items: end;
-    background: url(./img/project-sub1.png)center/cover no-repeat;
+    background: url(./img/gallery1.png)center/cover no-repeat;
 }
 
 .gallery_img2 {
@@ -431,7 +454,7 @@
     background: url(./img/project-sub4.png)center/cover no-repeat;
 }
 
-/* end projects */
+/* end gallery */
 .contacts {
     max-width: 1400px;
     width: 100%;
@@ -441,16 +464,27 @@
     flex-direction: column;
     margin-bottom: 30px;
 }
-
+.contacts__container{
+    display: flex;
+}
 .contacts__title {}
 
-.contacts__title::before {
+.contacts__tel::before {
     content: '';
     background: url(./img/phone.svg);
     display: block;
     width: 24px;
     height: 24px;
-    margin-bottom: 13px;
+    margin-bottom: 26px;
+}
+.contacts__mail::before {
+    content: '';
+    background: url(./img/mail.png);
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 15px;
+    opacity: 1;
 }
 
 .contacts__tel {
@@ -460,7 +494,7 @@
     letter-spacing: -0.03em;
     color: var(--black-color);
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-right: 120px;
 }
 
 .contacts__mail {
@@ -487,7 +521,7 @@
 .contacts a:hover {
     cursor: pointer;
 }
-
+/* end contacts */
 .footer {
     max-width: 1400px;
     width: 100%;
@@ -533,4 +567,82 @@
 .footer__item a:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+/* end footer */
+
+
+@media (max-width:1024px){
+    .header,
+    .modern, 
+    .about,
+    .projects, 
+    .services, 
+    .reviews,
+    .gallery, 
+    .contacts,
+    .footer {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header__nav{
+        display: none;
+    }
+
+    .modern__container{
+        max-height: 400px;
+    }
+    .modern__title{
+        font-size: 50px;
+    }
+    .modern__text {
+        font-size: 20px;
+    }
+    .about__text {
+        width: 80%;
+        font-size: 35px;
+    }
+    .projects__sub-title{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 480px){
+    .header,
+    .modern, 
+    .about,
+    .projects, 
+    .services, 
+    .reviews,
+    .gallery, 
+    .contacts,
+    .footer {
+        padding: 0 13px;
+    }
+    .section__title {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .modern__title{
+        font-size: 30px;
+    }
+    .modern__text {
+        width: 80%;
+        font-size: 16px;
+    }
+    .about__text {
+        width: 100%;
+        font-size: 22px;
+    }
+    .about__btn{
+        padding: 14px 27px;
+        font-size: 16px;
+    }
+    .projects__sub-title{
+        font-size: 18px;
+    }
+    .projects__link {
+        font-size: 16px;
+
+    }
 }
