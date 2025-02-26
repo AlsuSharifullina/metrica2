@@ -7,7 +7,9 @@
     font-family: "Manrope", serif;
     cursor: default;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --black-color: #121212;
     --white-color: #fff;
@@ -51,8 +53,6 @@
     justify-content: space-between;
     list-style: none;
 }
-
-.header__item {}
 
 .header__item a {
     font-weight: 400;
@@ -646,21 +646,62 @@
     right: 0;
     top: 0px;
     z-index: 10;
-    background: var(--white-color);
     overflow: hidden;
     transition: 0.3s;
     transform-origin: top right;
     z-index: 10;
 }
-
+.header__nav-burger-bg-l{
+    width: 20%;
+    height: 100vh;
+    background-color: var(--black-color);
+    opacity: 0.95;
+}
+.header__nav-burger-bg-r{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .nav__list-burger{
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: ;
 }
-
-/* ens burger */
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+}
+.header__contacts h3{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+    opacity: 0.5;
+}
+.contacts__tel-br {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--black-color);
+    text-decoration: none;
+}
+.contacts__mail-br {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+    text-decoration: none;
+}
+.header__logo-br{
+    margin-bottom: 50px;
+}
+/* end burger */
 
 
 
@@ -758,4 +799,16 @@
         font-size: 16px;
 
     }
+}
+
+
+.page-content {
+    overflow: auto; 
+    height: 100vh;
+    position: relative;
+}
+
+.menu_toggler:checked ~ .page-content {
+    height: 100vh;
+    overflow: hidden;
 }

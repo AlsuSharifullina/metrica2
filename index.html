@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="page-content">
     <header class="header">
         <a class="header__logo" href="#">
             <img src="./img/logo.svg" alt="logo">
@@ -31,12 +32,23 @@
         </label>
 
         <nav class="header__nav-burger" id="">
-            <ul class="nav__list-burger">
-                <li class="header__item"><a href="#about">О НАС</a></li>
-                <li class="header__item"><a href="#projects">ПРОЕКТЫ</a></li>
-                <li class="header__item"><a href="#services">УСЛУГИ</a></li>
-                <li class="header__item"><a href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
+            <div class="header__nav-burger-bg-l"></div>
+            <div class="header__nav-burger-bg-r">
+                <a class="header__logo-br" href="#">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+                <ul class="nav__list-burger">
+                    <li class="header__item"><a href="#about">О НАС</a></li>
+                    <li class="header__item"><a href="#projects">ПРОЕКТЫ</a></li>
+                    <li class="header__item"><a href="#services">УСЛУГИ</a></li>
+                    <li class="header__item"><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+                <div class="header__contacts">
+                    <h3>для связи:</h3>
+                    <a class="contacts__tel-br" href="tel:+7 935  895-45-35">+7 935 895-45-35</a>
+                    <a class="contacts__mail-br" href="mailto:hello@mail.com">hello@mail.com</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -204,13 +216,13 @@
             </div>
         </section>
         <!-- end gallery -->
-        <section class="contacts" id="contacts">
+        <!-- <section class="contacts" id="contacts">
             <h3 class="contacts__title section__title">Контакты</h3>
             <div class="contacts__container">
                 <a class="contacts__tel" href="tel:+7 935  895-45-35">+7 935 895-45-35</a>
                 <a class="contacts__mail" href="mailto:hello@mail.com">hello@mail.com</a>
             </div>
-        </section>
+        </section> -->
         <!-- end contacts -->
     </main>
 
@@ -227,7 +239,7 @@
 
         <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
     </footer>
-
+    </div>
 
 
 
