@@ -296,6 +296,8 @@
     outline: none;
     background-color: var(--accent);
     color: var(--white-color);
+    border: none;
+    outline: none;
 }
 
 .services__btn:hover {
