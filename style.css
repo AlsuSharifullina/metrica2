@@ -571,9 +571,120 @@
     cursor: pointer;
 }
 /* end footer */
+/* burger menu */
+.menu_toggler{
+    display: none;
+    width: 30px;
+    height: 30px;
+    /* position: absolute;
+    right: 95px;
+    top: 3px; */
+    z-index: 20;
+    opacity: 0;
+}
+.menu_burger-button {
+    display: none;
+    width: 50px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    top: 0px;
+    list-style: none;
+    z-index: 15;
+    transition: 0.3s;
+}
 
 
-@media (max-width:1024px){
+.menu_burger-button::before , .menu_burger-button::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 20px;
+    background: var(--black-color);
+}
+
+.menu_burger-button::before {
+    width: 31px;
+    right: 0;
+    top: 16px;
+}
+
+.menu_burger-button::after {
+    width: 50px;
+    bottom: 16px;
+}
+
+.menu_toggler:checked ~ .menu_burger-button::before {
+    transform: rotate(45deg);
+    width: 30px;
+    top:10px;
+    background:var(--black-color);
+}
+.menu_toggler:checked ~ .menu_burger-button::after {
+    transform: rotate(-45deg);
+    width: 30px;
+    left: 20px;
+    top: 10px;
+    background: var(--black-color);
+}
+
+.menu_toggler:checked ~ .header__nav-burger{
+    height: 100vh;
+    overflow: hidden;
+    transform-origin: top right;
+}
+
+.header__nav-burger{
+    display: none;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0px;
+    z-index: 10;
+    background: var(--white-color);
+    overflow: hidden;
+    transition: 0.3s;
+    transform-origin: top right;
+    z-index: 10;
+}
+
+.nav__list-burger{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ens burger */
+
+
+
+
+
+
+
+
+/* adaptiv */
+@media (max-width:991.98px){
+    /* menu burger */
+    .menu_toggler, 
+    .menu_burger-button {
+        display: block;
+    }
+    .header__nav-burger{
+        display: flex;
+    }
+    .nav__list-burger .header__item{
+        margin-bottom: 8px;
+        margin-left: 0;
+        font-style: 24px;
+    }
+    /* end menu burger */
     .header,
     .modern, 
     .about,
@@ -609,7 +720,7 @@
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 479.98px){
     .header,
     .modern, 
     .about,

@@ -14,7 +14,8 @@
         <a class="header__logo" href="#">
             <img src="./img/logo.svg" alt="logo">
         </a>
-
+        <!-- burger menu menu_toggler-->
+        <input type="checkbox" class="menu_toggler" id="menu_toggler">
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a href="#about">О НАС</a></li>
@@ -23,7 +24,22 @@
                 <li class="header__item"><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
         </nav>
+
+        <!-- burger menu -->
+        <label class="menu_burger-button" for="menu_toggler">
+            <span class="menu_line"></span>
+        </label>
+
+        <nav class="header__nav-burger" id="">
+            <ul class="nav__list-burger">
+                <li class="header__item"><a href="#about">О НАС</a></li>
+                <li class="header__item"><a href="#projects">ПРОЕКТЫ</a></li>
+                <li class="header__item"><a href="#services">УСЛУГИ</a></li>
+                <li class="header__item"><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
     </header>
+
     <!-- end header -->
     <main>
         <section class="modern">
@@ -211,6 +227,11 @@
 
         <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
     </footer>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
