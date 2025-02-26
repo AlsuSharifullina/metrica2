@@ -10,6 +10,16 @@
 html{
     scroll-behavior: smooth;
 }
+.page-content {
+    overflow: auto; 
+    height: 100vh;
+    position: relative;
+}
+
+.menu_toggler:checked ~ .page-content {
+    height: 100vh;
+    overflow: hidden;
+}
 :root {
     --black-color: #121212;
     --white-color: #fff;
@@ -238,12 +248,13 @@ html{
 
 .services__card {
     width: 49.5%;
+    height: 390px;
     margin-bottom: 80px;
 }
 
 .services__img {
     width: 100%;
-    height: 388px;
+    height: 100%;
     margin-bottom: 24px;
     padding: 30px;
 }
@@ -490,8 +501,10 @@ html{
 }
 
 .contacts__tel {
+    display: block;
+    width: 50%;
     font-weight: 400;
-    font-size: 60px;
+    font-size: clamp(35px, 4vw, 60px);
     line-height: 100%;
     letter-spacing: -0.03em;
     color: var(--black-color);
@@ -500,8 +513,10 @@ html{
 }
 
 .contacts__mail {
+    display: block;
+    width: 50%;
     font-weight: 400;
-    font-size: 60px;
+    font-size: clamp(35px, 5.5vw, 65px);
     line-height: 100%;
     letter-spacing: -0.03em;
     color: var(--black-color);
@@ -734,8 +749,9 @@ html{
     .reviews,
     .gallery, 
     .contacts,
-    .footer {
+    .footer{
         width: 100%;
+        margin: 0 auto;
         padding: 0 15px;
     }
     .header__nav{
@@ -751,13 +767,43 @@ html{
     .modern__text {
         font-size: 20px;
     }
+    .about,
+    .projects,
+    .reviews{
+        padding-top: 120px;
+    }
     .about__text {
         width: 80%;
         font-size: 35px;
     }
+    .projects{
+        padding-bottom: 120px;
+    }
     .projects__sub-title{
         font-size: 25px;
     }
+    .services{
+        padding: 150px 15px 120px 15px;
+    }
+    .services__card {
+        height: 315px;
+    }
+    .contacts{
+        padding: 120px 15px 80px  15px;
+    }
+    .contacts__tel,
+    .contacts__mail {
+        /* font-size: 40px; */
+        line-height: 133%;
+    }
+
+    .footer{
+        padding: 60px 15px 30px 15px;
+    }
+    .footer__nav{
+        width: 60%;
+    }
+
 
 }
 
@@ -771,7 +817,7 @@ html{
     .gallery, 
     .contacts,
     .footer {
-        padding: 0 13px;
+        padding: 50px 13px;
     }
     .section__title {
         font-size: 14px;
@@ -799,16 +845,26 @@ html{
         font-size: 16px;
 
     }
-}
+    .services__container{
 
-
-.page-content {
-    overflow: auto; 
-    height: 100vh;
-    position: relative;
-}
-
-.menu_toggler:checked ~ .page-content {
-    height: 100vh;
-    overflow: hidden;
+    }
+    .services__card {
+        width: 100%;
+        height: 240px;
+    }
+    .contacts__container{
+        flex-direction: column;
+    }
+    .contacts__tel,
+    .contacts__mail{
+        width: 100%;
+        /* font-size: 35px; */
+        margin-bottom: 20px;
+    }
+    .footer__nav{
+        width: 90%;
+    }
+    .footer__item a {
+        font-size: 12px;
+    }
 }
