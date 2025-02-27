@@ -791,9 +791,26 @@ html{
     .services{
         padding: 150px 15px 120px 15px;
     }
+    .services__img-text {
+        font-size: 20px;
+    }
+    .services__sub-title {
+        font-size: 25px;
+    }
     .services__card {
         height: 315px;
     }
+    /* reviw */
+    .reviews__sub-title {
+        font-size: 35px;
+    }
+    .reviews__text {
+        font-size: 20px;
+    }
+
+
+
+    /* gallery */
     .gallery{
         max-width: 1000px;
         height: 538px;
@@ -807,6 +824,10 @@ html{
     .gallery__img4 {
         padding: 50px 80px;
     }
+    .gallery__text{
+        font-size: 25px;
+    }
+       /* contacts */
     .contacts{
         padding: 120px 15px 80px  15px;
     }
@@ -864,13 +885,42 @@ html{
         font-size: 16px;
 
     }
-    .services__container{
-
+    .projects__btn {
+        padding: 37px 0;
+        font-size: 22px;
+    }
+/* servises */
+    .services{
+        padding: 80px 12px 80px 12px;
+    }
+    .services__img-text {
+        font-size: 14px;
+    }
+    .services__sub-title {
+        font-size: 18px;
     }
     .services__card {
         width: 100%;
         height: 240px;
     }
+    .services__btn {
+        font-size: 22px;
+        padding: 36px 0;
+    }
+        /* reviw */
+        .reviews__card{
+            width: 100%;
+        }
+        .reviews__sub-title {
+            font-size: 25px;
+        }
+        .reviews__text {
+            font-size: 16px;
+        }
+    
+    
+    
+        /* gallery */
     .gallery{
         max-width: 500px;
         height: 408px;
@@ -888,15 +938,28 @@ html{
         width: 100%;
         justify-content: space-between;
     }
+    .gallery__btn{
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+    }
+    .gallery__text{
+        font-size: 19px;
+    }
+    /* contacts */
     .contacts__container{
         flex-direction: column;
     }
     .contacts__tel,
     .contacts__mail{
         width: 100%;
-        /* font-size: 35px; */
         margin-bottom: 20px;
     }
+    .contacts__tel::before,
+    .contacts__tel::before{
+        width: 18px;
+    }
+    /* footer */
     .footer__nav{
         width: 90%;
     }
