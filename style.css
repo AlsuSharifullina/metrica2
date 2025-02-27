@@ -41,7 +41,6 @@ html{
     height: 90px;
     margin: 0 auto;
     padding: 0 125px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -366,9 +365,8 @@ html{
 .gallery{
     max-width: 1400px;
     width: 100%;
-    height: 84.5vh;
+    height: 717px;
     margin: 0 auto;
-    padding: 60px 125px;
     position: relative;
     top: 0;
     left: 0;
@@ -402,24 +400,22 @@ html{
 .gallery__btn{
     width: 40px;
     height: 40px;
+    font-size: 40px;
     background: none;
     border: none;
-}
-.gallery__btn-left {
-    margin-right: 14px;
+    outline: none;
+    color: var(--white-color);
 }
 
-.gallery__btn-right {
 
-}
 
 .gallery__text {
-    width: 30%;
+   
     font-weight: 400;
     font-size: 30px;
     letter-spacing: -0.03em;
     color: var(--white-color);
-    margin: 60px 125px 60px ;
+    /* padding: 60px 125px; */
 }
 
 .gallery__container {
@@ -439,6 +435,7 @@ html{
 
 .gallery__img {
     width: 100%;
+    
 }
 
 .gallery__img1 {
@@ -446,24 +443,34 @@ html{
     height: 100%;
     display: flex;
     align-items: end;
+    padding: 60px 125px;
     background: url(./img/gallery1.png)center/cover no-repeat;
 }
 
 .gallery_img2 {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 60px 125px;
     background: url(./img/project-sub2.png)center/cover no-repeat;
 }
 
 .gallery__img3 {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 60px 125px;
     background: url(./img/project-sub3.png)center/cover no-repeat;
 }
 
 .gallery__img4 {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 60px 125px;
     background: url(./img/project-sub4.png)center/cover no-repeat;
 }
 
@@ -746,8 +753,7 @@ html{
     .about,
     .projects, 
     .services, 
-    .reviews,
-    .gallery, 
+    .reviews, 
     .contacts,
     .footer{
         width: 100%;
@@ -787,6 +793,19 @@ html{
     }
     .services__card {
         height: 315px;
+    }
+    .gallery{
+        max-width: 1000px;
+        height: 538px;
+    }
+    .gallery__content{
+        padding: 80px 50px 152px 50px;
+    }
+    .gallery__img1,
+    .gallery_img2,
+    .gallery__img3,
+    .gallery__img4 {
+        padding: 50px 80px;
     }
     .contacts{
         padding: 120px 15px 80px  15px;
@@ -851,6 +870,23 @@ html{
     .services__card {
         width: 100%;
         height: 240px;
+    }
+    .gallery{
+        max-width: 500px;
+        height: 408px;
+    }
+    .gallery__content{
+        padding: 61px 12px 189px 12px;
+    }
+    .gallery__img1,
+    .gallery_img2,
+    .gallery__img3,
+    .gallery__img4 {
+        padding: 60px 12px;
+    }
+    .gallery_btns{
+        width: 100%;
+        justify-content: space-between;
     }
     .contacts__container{
         flex-direction: column;
