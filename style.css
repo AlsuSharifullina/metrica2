@@ -150,6 +150,7 @@ html{
 }
 
 .about__btn {
+    display: inline-block;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: -0.03em;
@@ -157,6 +158,7 @@ html{
     padding: 20px 40px;
     background-color: var(--accent);
     color: var(--white-color);
+    text-decoration: none;
     border: none;
     outline: none;
     transition: 0.3s;
