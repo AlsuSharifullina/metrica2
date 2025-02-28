@@ -37,3 +37,28 @@ btnRight.addEventListener('click', () => {
 
 // Показываем первый слайд при загрузке
 updateSlider();
+
+
+// popup
+const openPopupBtn = document.querySelector(".services__btn");
+const popup = document.querySelector(".popup");
+const closePopupBtn = document.querySelector(".popup__btn");
+document.addEventListener("DOMContentLoaded", function () {
+    // Открытие popup
+    openPopupBtn.addEventListener("click", function () {
+        popup.classList.add("popup_open");
+    });
+
+    // Закрытие popup при нажатии на кнопку закрытия
+    closePopupBtn.addEventListener("click", function () {
+        popup.classList.remove("popup_open");
+    });
+
+    // Закрытие popup при клике вне контента
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.classList.remove("popup_open");
+        }
+    });
+});
+

@@ -123,8 +123,24 @@
                     <h3 class="services__sub-title">Комплектация</h3>
                 </div>
             </div>
+            <!-- при нажатие сюда появляется popup -->
             <button class="services__btn">Заказать услугу</button>
         </section>
+
+        <!-- popup -->
+        <div class="popup">
+            <div class="popup__content">
+                <button class="popup__btn"><i class="fa-solid fa-xmark"></i></button>
+                <h2 class="form__title">Заказать услугу</h2>
+                <p class="form__text">Заполните форму, мы свяжемся с вами в течение суток</p>
+                <form action="#">
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <input type="email" id="email" name="email" placeholder="Электронная почта">
+                    <input type="number" id="number" name="number" placeholder="Номер телефона">
+                    <button type="submit" class="send-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
         <!-- end services -->
 
         <section class="reviews">
