@@ -1097,10 +1097,7 @@ form input {
     }
 }
 @media (hover: none) {
-    * {
+    .hover-effect {
         pointer-events: none;
-    }
-    a, button {
-        pointer-events: auto;
     }
 }
